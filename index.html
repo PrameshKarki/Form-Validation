@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation | Created By:Pramesh Karki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formContainer">
+        <h2>Register With Us</h2>
+        <form id="contactForm" action="#">
+            <div class="formControl">
+                <label for="userName">Username</label><br>
+                <input type="text" placeholder="Enter Username" name="userName" id="userName"><br>
+                <small>
+                    <p class="red">Username must be of at least 6 characters and at max 10 characters</p>
+                </small>
+            </div>
+            <div class="formControl">
+                <label for="email">Email</label><br>
+                <input type="text" placeholder="Enter Email" name="email" id="email"><br>
+                <small>
+                    <p class="red">Invalid Email</p>
+                </small>
+            </div>
+            <div class="formControl">
+                <label for="contactNumber">Contact Number</label><br>
+                <input type="text" placeholder="Enter ContactNumber" name="contactNumber" id="contactNumber"><br>
+                <small>
+                    <p class="red">Invalid Contact Number</p>
+                </small>
+            </div>
+            <div class="formControl">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" placeholder="Enter Passoword" id="password"><br>
+                <small>
+                    <p class="red">Password must have at least one uppercase,one lowercase,one number and must be of at
+                        least 8 Characters.</p>
+                </small>
+            </div>
+            <div class="formControl">
+                <label for="confirmPassword">Confirm Password</label><br>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" id="confirmPassword"><br>
+                <small>
+                    <p class="red">Password did not match</p>
+                </small>
+            </div>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
